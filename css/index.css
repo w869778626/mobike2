@@ -1,0 +1,183 @@
+/* 版心 */
+.container-md{
+    width: 1080px;
+    padding: 0 20px;
+    margin: 0 auto ;
+    box-sizing: border-box;
+    /* background-color: red; */
+}
+
+html,body,.header-wrap,.swiper-container,.swiper-wrapper,.swiper-slide,.hero-bg{
+    width: 100%;
+    height: 100%;
+}
+.hero-bg{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header-wrap{
+    position: relative;
+}
+/* logo */
+.global-navigation-wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    padding-top: 1vmax;
+    padding-bottom: 1vmax;
+}
+.logo-links{
+    float: left;
+}
+.nav-links{
+    float: right;
+}
+.nav-links li{
+    position: relative;
+    float: left;
+    font-size: 16px;
+    line-height: 40px;
+}
+.nav-links li a{
+    display: block;
+    padding: 8px 20px;
+    color: #ffffff;
+}
+.nav-links li .nav-links-product{
+    cursor: default;
+}
+.nav-links-layer{
+    display: none;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 240px;
+    height: 204px;
+    background-color: #ffffff;
+    padding-top: 15px;
+    border-radius: 4px;
+}
+.nav-links-layer::before{
+    display: block;
+    position: absolute;
+    top: -16px;
+    left: 27px;
+    content: "";
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+}
+.nav-links li:hover .nav-links-layer{
+    display: block;
+}
+/* 中间文字 */
+.hero-lamding{
+    z-index: 99;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 146px;
+    margin-top: -73px;
+    animation: color 2s ease infinite;
+}
+.hero-txt{font-size: 420%;margin-bottom:20px ;}
+.hero-btn{
+    color: #ffffff;
+    padding: 14px 26px;
+    font-size: 22px;
+    background: rgba(0, 0, 0 ,.6);
+    border-radius: 4px;
+}
+.hero-btn:hover{background-color:rgba(0, 0, 0 ,.8);}
+@keyframes color{
+    0%{color: #ffffff;}
+    59.9%{color: #ffffff;}
+    60%{color: black;}
+    100%{color: black;}
+}
+/* 新闻模块 */
+.news-wrap{
+    z-index: 99;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding:10px 0;
+    background-color: rgba(0, 0, 0 ,.3);
+    font-size: 16px;
+    color: #ffffff;
+}
+.news-wrap span{
+    background-color: #ff2e2e;
+    border-radius: 4px;
+    font-size: 12px;
+    padding: 0 8px;
+}
+/* 第二屏 */
+.hero-wrap{
+    margin-top: 2px;
+    margin-left: -2px;
+}
+.hero-product{
+    float: left;
+    width: 25%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 260px;
+    border-left: 2px solid white;
+   box-sizing: border-box;
+}
+.hero-wrap h3{
+    text-align: center;
+    color: #ffffff;
+    font-size: 24px;
+    padding-top: 40px;
+    font-weight: normal;
+}
+/* 图标 */
+.meta-links{
+    border-bottom: 1px solid black;
+}
+.meta-link{
+    float: left;
+    width: 33.33%;
+    padding: 30px 0;
+}
+.meta-link .icon{
+    display: inline-block;
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.meta-link .txt{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+}
+.meta-link:nth-child(1){
+    text-align: left;
+}
+.meta-link:nth-child(2){
+    text-align: center;
+}
+.meta-link:nth-child(3){
+    text-align: right;
+}
+/* pad */
+@media screen and(max-width:1080px){
+.contener-md{width: 100%;}
+.nav-links{display: none;}
+.header-wrap
+}
+
+/* 手机 */
+@media screen and(max-width:640px){
+
+}
