@@ -170,14 +170,33 @@ html,body,.header-wrap,.swiper-container,.swiper-wrapper,.swiper-slide,.hero-bg{
 .meta-link:nth-child(3){
     text-align: right;
 }
-/* pad */
-@media screen and(max-width:1080px){
-.contener-md{width: 100%;}
-.nav-links{display: none;}
-.header-wrap
+/* 底部文字 */
+.footer-wrap{
+    border-bottom: 1px solid black;
+}
+.footer{
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+.main-links{
+    margin-right: 40px;
+    flex-wrap: 2;
+}
+.main-links li{
+    line-height: 2.3;
+    font-size: 16px;
+    font-weight: 300;
 }
 
-/* 手机 */
-@media screen and(max-width:640px){
+/* pad */
+@media screen and (max-width:1080px){
+    .container-md{width:100%}
+    .nav-links{display: none;}
+    .hero-product{width: 50%;margin-bottom:2px}
 
+/* 手机 */
+@media screen and (max-width:640px){
+    .hero-product{width: 100%;}
+    .meta-link{width:100%;padding:15px 0;}
+    .meta-link:nth-child(2),.meta-link:nth-child(3){text-align: left;}
 }
